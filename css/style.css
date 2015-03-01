@@ -1,0 +1,12 @@
+body {
+    background-color: yellow;
+}
+
+#log {
+	height: 200px;
+	width: 300px;
+}
+
+#dimensions #h, #w {
+	width: 50px;
+}
