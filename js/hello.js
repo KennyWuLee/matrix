@@ -1,7 +1,5 @@
-var w = 0;
-var h = 0;
-
 $(document).ready(function() {
+	var w, h;
 	$('#rref').hide();
 	$('#log').hide();
 	$('#dimensions').submit(function() {
@@ -78,9 +76,9 @@ function switchRows($table, row1, row2) {
 		var $row1 = $table.find("tr:eq(" + Math.min(row1, row2) + ")");
 		var $row2 = $table.find("tr:eq(" + Math.max(row1, row2) + ")");
 
-		$pred = $row2.prev();
-		$row1.after($row2);
-		$pred.after($row1);
+		$row1.after($row2.clone());
+		$row2.after($row1);
+		$row2.remove();
 	}
 }
 
