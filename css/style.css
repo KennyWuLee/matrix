@@ -2,11 +2,15 @@ body {
     background-color: red;
 }
 
+#table tr, td {
+	padding: 5px;
+}
+
 #log {
 	height: 200px;
 	width: 300px;
 }
 
-#dimensions #h, #w {
+input[type="number"] {
 	width: 50px;
 }
